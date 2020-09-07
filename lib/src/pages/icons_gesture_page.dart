@@ -54,7 +54,7 @@ class IconsGesturePage extends StatelessWidget {
                   widgetLongPress: null,
                   widgetTap: TestableGestureAction.open_test_actions_dialog,
                 ),
-                id: 'icon_${key}',
+                id: 'icon_$key',
                 child: GestureDetector(
                   onLongPress: () => Navigator.of(context).push(
                     MaterialPageRoute(

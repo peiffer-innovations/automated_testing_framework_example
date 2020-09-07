@@ -9,7 +9,7 @@ class StackedScrollPage extends StatelessWidget {
           itemBuilder: (BuildContext context, int idx) => Padding(
             padding: EdgeInsets.all(8.0),
             child: Testable(
-              id: 'widget_${index}_${idx}',
+              id: 'widget_${index}_$idx',
               child: Material(
                 elevation: 2.0,
                 child: Stack(
