@@ -6,6 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
+  HomePage({
+    Key key,
+    @required this.title,
+  })  : assert(title?.isNotEmpty == true),
+        super(key: key);
+
   final Map<String, Widget> _pages = {
     'Buttons': ButtonsPage(),
     'Dropdown': DropdownPage(),
@@ -14,11 +20,13 @@ class HomePage extends StatelessWidget {
     'Stacked Scroll Page': StackedScrollPage(),
   };
 
+  final String title;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Automated Tests'),
+        title: Text(title),
         actions: [
           Testable(
             id: 'theme_switcher',

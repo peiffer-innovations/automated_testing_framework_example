@@ -1,3 +1,8 @@
+## [1.0.1] - September 7th, 2020
+
+* Updated to support a dynamic home title
+
+
 ## [1.0.0+2] - September 7th, 2020
 
 * Minor static analysis fixes

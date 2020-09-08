@@ -5,6 +5,7 @@ import 'package:meta/meta.dart';
 @immutable
 class TestExampleOptions {
   TestExampleOptions({
+    this.appTitle = 'Automated Tests',
     this.autorun = false,
     this.enabled = !kReleaseMode,
     this.gestures,
@@ -14,6 +15,7 @@ class TestExampleOptions {
     this.testWriter = TestStore.testWriter,
   });
 
+  final String appTitle;
   final bool autorun;
   final bool enabled;
   final TestableGestures gestures;
