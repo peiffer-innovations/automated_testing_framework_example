@@ -1,3 +1,8 @@
+## [1.0.2] - September 8th, 2020
+
+* Added example for issue #5 from the core framework
+
+
 ## [1.0.1] - September 7th, 2020
 
 * Updated to support a dynamic home title
