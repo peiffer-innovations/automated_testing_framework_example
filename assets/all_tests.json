@@ -1,5 +1,6 @@
 [
   "packages/automated_testing_framework_example/assets/tests/buttons.json",
+  "packages/automated_testing_framework_example/assets/tests/double_tap.json",
   "packages/automated_testing_framework_example/assets/tests/dropdowns.json",
   "packages/automated_testing_framework_example/assets/tests/failure.json",
   "packages/automated_testing_framework_example/assets/tests/icons_gesture.json",

@@ -1,3 +1,9 @@
+## [1.0.3] - September 12th, 2020
+
+* Adding screenshots to more examples
+* Added gesture page
+
+
 ## [1.0.2] - September 8th, 2020
 
 * Added example for issue #5 from the core framework

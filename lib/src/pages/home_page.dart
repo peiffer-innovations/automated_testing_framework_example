@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
     'Buttons': ButtonsPage(),
     'Dropdown': DropdownPage(),
     'Edit Text': EditTextPage(),
+    'Gestures': GesturesPage(),
     'Icons Gesture': IconsGesturePage(),
     'Issue 5': Issue5Page(),
     'Stacked Scroll Page': StackedScrollPage(),
