@@ -1,3 +1,8 @@
+## [1.0.4] - September 14th, 2020
+
+* Adding `set_variable` example
+
+
 ## [1.0.3] - September 12th, 2020
 
 * Adding screenshots to more examples
