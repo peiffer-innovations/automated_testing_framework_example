@@ -1,3 +1,8 @@
+## [1.0.5] - September 15th, 2020
+
+* Updated to latest framework version
+
+
 ## [1.0.4] - September 14th, 2020
 
 * Adding `set_variable` example

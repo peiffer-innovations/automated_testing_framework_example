@@ -12,8 +12,8 @@
       "id": "set_variable",
       "values": {
         "type": "String",
-        "key": "button",
-        "value": "button_thirty"
+        "value": "button_thirty",
+        "variableName": "button"
       }
     },
     {
@@ -27,9 +27,9 @@
     {
       "id": "set_variable",
       "values": {
-        "value": "button_sixty",
         "type": "String",
-        "key": "button"
+        "value": "button_sixty",
+        "variableName": "button"
       }
     },
     {
@@ -39,6 +39,9 @@
         "testableId": "{{button}}",
         "increment": "200"
       }
+    },
+    {
+      "id": "go_back"
     }
   ],
   "version": 0
