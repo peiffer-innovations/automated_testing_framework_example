@@ -1,3 +1,8 @@
+## [1.0.6] - September 19th, 2020
+
+* Added test suites
+
+
 ## [1.0.5] - September 15th, 2020
 
 * Updated to latest framework version

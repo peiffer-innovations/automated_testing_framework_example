@@ -1,6 +1,7 @@
 {
   "active": true,
   "name": "Screenshot",
+  "suiteName": "Core",
   "steps": [{
     "id": "screenshot"
   }],

@@ -9,6 +9,7 @@ class TestExampleOptions {
     this.autorun = false,
     this.enabled = !kReleaseMode,
     this.gestures,
+    this.suiteName,
     this.testReader = TestStore.testReader,
     this.testReporter = TestStore.testReporter,
     this.testWidgetsEnabled = !kReleaseMode,
@@ -19,6 +20,7 @@ class TestExampleOptions {
   final bool autorun;
   final bool enabled;
   final TestableGestures gestures;
+  final String suiteName;
   final TestReader testReader;
   final TestReporter testReporter;
   final bool testWidgetsEnabled;

@@ -73,7 +73,10 @@ class _AppState extends State<App> {
   }
 
   Future<void> _runTests() async {
-    var tests = await _testController.loadTests(context);
+    var tests = await _testController.loadTests(
+      context,
+      suiteName: widget.options.suiteName,
+    );
     await _testController.runPendingTests(tests);
   }
 
