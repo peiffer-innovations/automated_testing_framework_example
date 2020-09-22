@@ -9,7 +9,9 @@ class TestExampleOptions {
     this.autorun = false,
     this.enabled = !kReleaseMode,
     this.gestures,
+    this.goldenImageWriter = TestStore.goldenImageWriter,
     this.suiteName,
+    this.testImageReader = TestStore.testImageReader,
     this.testReader = TestStore.testReader,
     this.testReporter = TestStore.testReporter,
     this.testWidgetsEnabled = !kReleaseMode,
@@ -20,7 +22,9 @@ class TestExampleOptions {
   final bool autorun;
   final bool enabled;
   final TestableGestures gestures;
+  final GoldenImageWriter goldenImageWriter;
   final String suiteName;
+  final TestImageReader testImageReader;
   final TestReader testReader;
   final TestReporter testReporter;
   final bool testWidgetsEnabled;

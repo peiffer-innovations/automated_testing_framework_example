@@ -33,6 +33,7 @@ class _AppState extends State<App> {
     super.initState();
 
     _testController = TestController(
+      goldenImageWriter: widget.options.goldenImageWriter,
       navigatorKey: _navigatorKey,
       onReset: () async {
         while (_navigatorKey.currentState.canPop()) {
@@ -43,6 +44,7 @@ class _AppState extends State<App> {
         setState(() {});
       },
       registry: TestStepRegistry.instance,
+      testImageReader: widget.options.testImageReader,
       testReader: widget.options.testReader,
       testReporter: widget.options.testReporter,
       testWriter: widget.options.testWriter,
@@ -106,6 +108,7 @@ class _AppState extends State<App> {
           Provider<StreamController<void>>.value(value: _themeController),
         ],
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           key: _uniqueKey,
           navigatorKey: _navigatorKey,
           theme: _darkTheme == true

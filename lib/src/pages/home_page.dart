@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:automated_testing_framework/automated_testing_framework.dart';
 import 'package:automated_testing_framework_example/automated_testing_framework_example.dart';
+import 'package:automated_testing_framework_example/src/pages/clock_page.dart';
 import 'package:automated_testing_framework_example/src/pages/issue5_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,6 +16,7 @@ class HomePage extends StatelessWidget {
 
   final Map<String, Widget> _pages = {
     'Buttons': ButtonsPage(),
+    'Clock': ClockPage(),
     'Dropdown': DropdownPage(),
     'Edit Text': EditTextPage(),
     'Gestures': GesturesPage(),

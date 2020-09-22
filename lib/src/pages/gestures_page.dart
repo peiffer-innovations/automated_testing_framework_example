@@ -6,6 +6,7 @@ class GesturesPage extends StatefulWidget {
     Key key,
   }) : super(key: key);
 
+  @override
   _GesturesPageState createState() => _GesturesPageState();
 }
 

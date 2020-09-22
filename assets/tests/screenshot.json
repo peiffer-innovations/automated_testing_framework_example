@@ -3,7 +3,10 @@
   "name": "Screenshot",
   "suiteName": "Core",
   "steps": [{
-    "id": "screenshot"
+    "id": "screenshot",
+    "values": {
+      "imageId": "core_screenshot"
+    }
   }],
-  "version": 1
+  "version": 2
 }
