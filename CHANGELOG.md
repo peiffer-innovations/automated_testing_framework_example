@@ -1,3 +1,8 @@
+## [1.0.8] - September 24th, 2020
+
+* Updated to latest framework version
+
+
 ## [1.0.7] - September 21st, 2020
 
 * Updated to latest framework version
