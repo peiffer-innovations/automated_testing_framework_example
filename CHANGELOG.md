@@ -1,55 +1,60 @@
+## [1.0.9] - October 7th, 2020
+
+* Updated with the latest interpolated variable capabilites.
+
+
 ## [1.0.8] - September 24th, 2020
 
-* Updated to latest framework version
+* Updated to latest framework version.
 
 
 ## [1.0.7] - September 21st, 2020
 
-* Updated to latest framework version
-* Added clock
+* Updated to latest framework version.
+* Added clock.
 
 
 ## [1.0.6] - September 19th, 2020
 
-* Added test suites
+* Added test suites.
 
 
 ## [1.0.5] - September 15th, 2020
 
-* Updated to latest framework version
+* Updated to latest framework version.
 
 
 ## [1.0.4] - September 14th, 2020
 
-* Adding `set_variable` example
+* Adding `set_variable` example.
 
 
 ## [1.0.3] - September 12th, 2020
 
-* Adding screenshots to more examples
-* Added gesture page
+* Adding screenshots to more examples.
+* Added gesture page.
 
 
 ## [1.0.2] - September 8th, 2020
 
-* Added example for issue #5 from the core framework
+* Added example for issue #5 from the core framework.
 
 
 ## [1.0.1] - September 7th, 2020
 
-* Updated to support a dynamic home title
+* Updated to support a dynamic home title.
 
 
 ## [1.0.0+2] - September 7th, 2020
 
-* Minor static analysis fixes
+* Minor static analysis fixes.
 
 
 ## [1.0.0+1] - September 7th, 2020
 
-* Switched to the verified publisher
+* Switched to the verified publisher.
 
 
 ## [1.0.0] - September 7th, 2020
 
-* Migrated to a separate package
+* Migrated to a separate package.

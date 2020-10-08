@@ -4,6 +4,7 @@ import 'package:automated_testing_framework/automated_testing_framework.dart';
 import 'package:automated_testing_framework_example/automated_testing_framework_example.dart';
 import 'package:automated_testing_framework_example/src/pages/clock_page.dart';
 import 'package:automated_testing_framework_example/src/pages/issue5_page.dart';
+import 'package:automated_testing_framework_example/src/pages/numbers_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -22,6 +23,7 @@ class HomePage extends StatelessWidget {
     'Gestures': GesturesPage(),
     'Icons Gesture': IconsGesturePage(),
     'Issue 5': Issue5Page(),
+    'Numbers': NumbersPage(),
     'Stacked Scroll Page': StackedScrollPage(),
   };
 
