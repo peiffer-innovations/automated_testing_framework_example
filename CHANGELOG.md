@@ -1,3 +1,8 @@
+## [1.0.10] - October 11th, 2020
+
+* Updated to support passing bootstrapped variables to the test controller.
+
+
 ## [1.0.9] - October 7th, 2020
 
 * Updated with the latest interpolated variable capabilites.

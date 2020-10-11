@@ -16,6 +16,7 @@ class TestExampleOptions {
     this.testReporter = TestStore.testReporter,
     this.testWidgetsEnabled = !kReleaseMode,
     this.testWriter = TestStore.testWriter,
+    this.variables = const <String, dynamic>{},
   });
 
   final String appTitle;
@@ -29,4 +30,5 @@ class TestExampleOptions {
   final TestReporter testReporter;
   final bool testWidgetsEnabled;
   final TestWriter testWriter;
+  final Map<String, dynamic> variables;
 }

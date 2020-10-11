@@ -48,6 +48,7 @@ class _AppState extends State<App> {
       testReader: widget.options.testReader,
       testReporter: widget.options.testReporter,
       testWriter: widget.options.testWriter,
+      variables: widget.options.variables,
     );
 
     _themeController.stream.listen((_) {
