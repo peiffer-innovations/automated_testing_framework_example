@@ -1,3 +1,8 @@
+## [1.0.10+1] - October 20th, 2020
+
+* Updated to the latest framework version.
+
+
 ## [1.0.10] - October 11th, 2020
 
 * Updated to support passing bootstrapped variables to the test controller.

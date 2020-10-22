@@ -30,7 +30,7 @@ class _DropdownPageState extends State<DropdownPage> {
               child: Container(
                 constraints: BoxConstraints(maxWidth: 420.0),
                 child: TestableDropdownButtonFormField<String>(
-                  autovalidate: true,
+                  autovalidateMode: AutovalidateMode.always,
                   decoration: InputDecoration(
                     labelText: 'Dropdown $index',
                   ),

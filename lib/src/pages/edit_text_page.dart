@@ -22,7 +22,7 @@ class EditTextPage extends StatelessWidget {
               child: Container(
                 constraints: BoxConstraints(maxWidth: 420.0),
                 child: TestableTextFormField(
-                  autovalidate: true,
+                  autovalidateMode: AutovalidateMode.always,
                   decoration: InputDecoration(
                     labelText: 'Text $index',
                   ),
