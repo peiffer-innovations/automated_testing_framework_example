@@ -2,19 +2,19 @@ name: automated_testing_framework_example
 description: Example project for the Automated Testing Framework that provides a reusable example across add ons.
 homepage: https://github.com/peiffer-innovations/automated_testing_framework_example
 
-version: 1.0.10+1
+version: 1.0.10+2
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  automated_testing_framework: ^1.2.18+1
   flutter:
     sdk: flutter
-  automated_testing_framework: ^1.2.17+4
-  form_validation: ^1.0.1
+  form_validation: ^1.0.2
   intl: ^0.16.1
   meta: ^1.1.8
-  provider: ^4.3.2+1
+  provider: ^4.3.2+2
   static_translations: ^1.0.3
 
 dev_dependencies:
