@@ -10,6 +10,7 @@ class TestExampleOptions {
     this.enabled = !kReleaseMode,
     this.gestures,
     this.goldenImageWriter = TestStore.goldenImageWriter,
+    this.onInitComplete,
     this.suiteName,
     this.testImageReader = TestStore.testImageReader,
     this.testReader = TestStore.testReader,
@@ -24,6 +25,7 @@ class TestExampleOptions {
   final bool enabled;
   final TestableGestures gestures;
   final GoldenImageWriter goldenImageWriter;
+  final Future<void> Function(TestController testController) onInitComplete;
   final String suiteName;
   final TestImageReader testImageReader;
   final TestReader testReader;

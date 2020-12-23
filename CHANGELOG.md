@@ -1,3 +1,9 @@
+## [1.0.11] - December 22nd, 2020
+
+* Updated to the latest framework version.
+* Added `onInitComplete` call back to the `TestExampleOptions`.
+
+
 ## [1.0.10+2] - October 28th, 2020
 
 * Updated to the latest framework version.

@@ -58,8 +58,16 @@ class _AppState extends State<App> {
       }
     });
 
+    _initialize();
+  }
+
+  Future<void> _initialize() async {
+    if (widget.options.onInitComplete != null) {
+      await widget.options.onInitComplete(_testController);
+    }
+
     if (widget.options.autorun == true) {
-      _runTests();
+      await _runTests();
     }
   }
 
