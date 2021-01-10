@@ -1,3 +1,8 @@
+## [1.0.12] - January 10th, 2021
+
+* Swapped old Flat / Raised buttons for new Text / Elevated ones.
+
+
 ## [1.0.11] - December 22nd, 2020
 
 * Updated to the latest framework version.
