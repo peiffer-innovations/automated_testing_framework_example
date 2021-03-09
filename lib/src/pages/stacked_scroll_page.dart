@@ -2,10 +2,12 @@ import 'package:automated_testing_framework/widgets.dart';
 import 'package:flutter/material.dart';
 
 class StackedScrollPage extends StatelessWidget {
+  StackedScrollPage({Key? key}) : super(key: key);
+
   Widget _buildHorizontalScroll(int index) => Container(
         height: 232.0,
         child: ListView.builder(
-          key: ValueKey('inner_scroll_$index'),
+          key: ValueKey<String?>('inner_scroll_$index'),
           itemBuilder: (BuildContext context, int idx) => Padding(
             padding: EdgeInsets.all(8.0),
             child: Testable(

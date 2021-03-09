@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:form_validation/form_validation.dart';
 
 class EditTextPage extends StatelessWidget {
-  EditTextPage({Key key}) : super(key: key);
+  EditTextPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class EditTextPage extends StatelessWidget {
                     labelText: 'Text $index',
                   ),
                   id: 'edit_text_$index',
-                  validator: (String value) {
+                  validator: (String? value) {
                     var validator = Validator(
                       validators: [
                         MinLengthValidator(length: index),

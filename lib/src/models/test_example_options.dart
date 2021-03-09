@@ -24,10 +24,10 @@ class TestExampleOptions {
   final String appTitle;
   final bool autorun;
   final bool enabled;
-  final TestableGestures gestures;
+  final TestableGestures? gestures;
   final GoldenImageWriter goldenImageWriter;
-  final Future<void> Function(TestController testController) onInitComplete;
-  final String suiteName;
+  final Future<void> Function(TestController testController)? onInitComplete;
+  final String? suiteName;
   final TestImageReader testImageReader;
   final TestReader testReader;
   final TestReporter testReporter;

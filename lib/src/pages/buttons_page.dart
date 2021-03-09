@@ -3,7 +3,7 @@ import 'package:automated_testing_framework_example/automated_testing_framework_
 import 'package:flutter/material.dart';
 
 class ButtonsPage extends StatelessWidget {
-  ButtonsPage({Key key}) : super(key: key);
+  ButtonsPage({Key? key}) : super(key: key);
 
   final List<String> _buttons = [
     'one',

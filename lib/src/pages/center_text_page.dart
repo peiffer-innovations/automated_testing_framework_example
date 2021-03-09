@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 
 class CenterTextPage extends StatelessWidget {
   CenterTextPage({
-    Key key,
-    @required this.text,
-  })  : assert(text != null),
-        super(key: key);
+    Key? key,
+    required this.text,
+  }) : super(key: key);
 
   final String text;
 

@@ -8,10 +8,9 @@ import 'package:provider/provider.dart';
 
 class App extends StatefulWidget {
   App({
-    Key key,
-    @required this.options,
-  })  : assert(options != null),
-        super(key: key);
+    Key? key,
+    required this.options,
+  }) : super(key: key);
 
   final TestExampleOptions options;
 
@@ -23,8 +22,8 @@ class _AppState extends State<App> {
   final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
   final List<StreamSubscription> _subscriptions = [];
   bool _darkTheme = true;
-  TestController _testController;
-  StreamController<void> _themeController = StreamController<void>.broadcast();
+  TestController? _testController;
+  StreamController<void>? _themeController = StreamController<void>.broadcast();
 
   Key _uniqueKey = UniqueKey();
 
@@ -36,8 +35,8 @@ class _AppState extends State<App> {
       goldenImageWriter: widget.options.goldenImageWriter,
       navigatorKey: _navigatorKey,
       onReset: () async {
-        while (_navigatorKey.currentState.canPop()) {
-          _navigatorKey.currentState.pop();
+        while (_navigatorKey.currentState?.canPop() == true) {
+          _navigatorKey.currentState?.pop();
         }
 
         _uniqueKey = UniqueKey();
@@ -51,7 +50,7 @@ class _AppState extends State<App> {
       variables: widget.options.variables,
     );
 
-    _themeController.stream.listen((_) {
+    _themeController?.stream.listen((_) {
       _darkTheme = _darkTheme != true;
       if (mounted == true) {
         setState(() {});
@@ -62,8 +61,8 @@ class _AppState extends State<App> {
   }
 
   Future<void> _initialize() async {
-    if (widget.options.onInitComplete != null) {
-      await widget.options.onInitComplete(_testController);
+    if (widget.options.onInitComplete != null && _testController != null) {
+      await widget.options.onInitComplete!(_testController!);
     }
 
     if (widget.options.autorun == true) {
@@ -84,11 +83,11 @@ class _AppState extends State<App> {
   }
 
   Future<void> _runTests() async {
-    var tests = await _testController.loadTests(
+    var tests = await _testController?.loadTests(
       context,
       suiteName: widget.options.suiteName,
     );
-    await _testController.runPendingTests(tests);
+    await _testController?.runPendingTests(tests!);
   }
 
   @override
@@ -114,7 +113,7 @@ class _AppState extends State<App> {
       ),
       child: MultiProvider(
         providers: [
-          Provider<StreamController<void>>.value(value: _themeController),
+          Provider<StreamController<void>>.value(value: _themeController!),
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,

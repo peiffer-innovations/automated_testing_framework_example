@@ -2,6 +2,8 @@ import 'package:automated_testing_framework/widgets.dart';
 import 'package:flutter/material.dart';
 
 class NumbersPage extends StatelessWidget {
+  NumbersPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

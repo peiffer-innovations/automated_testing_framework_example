@@ -3,7 +3,7 @@ import 'package:automated_testing_framework_example/automated_testing_framework_
 import 'package:flutter/material.dart';
 
 class IconsGesturePage extends StatelessWidget {
-  IconsGesturePage({Key key}) : super(key: key);
+  IconsGesturePage({Key? key}) : super(key: key);
 
   static const Map<String, IconData> _icons = {
     'android': Icons.android,

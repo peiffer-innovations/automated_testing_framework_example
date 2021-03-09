@@ -4,7 +4,7 @@ import 'package:form_validation/form_validation.dart';
 import 'package:static_translations/static_translations.dart';
 
 class DropdownPage extends StatefulWidget {
-  DropdownPage({Key key}) : super(key: key);
+  DropdownPage({Key? key}) : super(key: key);
 
   @override
   _DropdownPageState createState() => _DropdownPageState();
@@ -48,7 +48,7 @@ class _DropdownPageState extends State<DropdownPage> {
                       setState(() {});
                     }
                   },
-                  validator: (String value) {
+                  validator: (String? value) {
                     var validator = Validator(
                       validators: [
                         _CustomValidator(index),
@@ -81,12 +81,12 @@ class _CustomValidator extends ValueValidator {
   Map<String, dynamic> toJson() => {};
 
   @override
-  String validate({
-    String label,
-    Translator translator,
-    String value,
+  String? validate({
+    required String label,
+    required Translator translator,
+    String? value,
   }) {
-    String error;
+    String? error;
 
     if (value != null) {
       if (int.parse(value) < min) {

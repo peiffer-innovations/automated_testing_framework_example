@@ -10,10 +10,9 @@ import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({
-    Key key,
-    @required this.title,
-  })  : assert(title?.isNotEmpty == true),
-        super(key: key);
+    Key? key,
+    required this.title,
+  }) : super(key: key);
 
   final Map<String, Widget> _pages = {
     'Buttons': ButtonsPage(),

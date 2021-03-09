@@ -2,6 +2,8 @@ import 'package:automated_testing_framework/automated_testing_framework.dart';
 import 'package:flutter/material.dart';
 
 class Issue5Page extends StatefulWidget {
+  Issue5Page({Key? key}) : super(key: key);
+
   @override
   _Issue5PageState createState() => _Issue5PageState();
 }

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class GesturesPage extends StatefulWidget {
   GesturesPage({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -45,7 +45,7 @@ class _GesturesPageState extends State<GesturesPage> {
               id: 'action_text',
               child: Padding(
                 padding: EdgeInsets.all(16.0),
-                child: Text(_value ?? ''),
+                child: Text(_value),
               ),
             ),
           ],

@@ -6,7 +6,7 @@ import 'package:intl/intl.dart';
 
 class ClockPage extends StatefulWidget {
   ClockPage({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -14,7 +14,7 @@ class ClockPage extends StatefulWidget {
 }
 
 class _ClockPageState extends State<ClockPage> {
-  Timer _timer;
+  Timer? _timer;
 
   @override
   void initState() {
