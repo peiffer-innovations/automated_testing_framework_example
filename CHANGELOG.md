@@ -1,3 +1,8 @@
+## [2.0.0+1] - April 19th, 2021
+
+* Added `CommentStep` to the example
+
+
 ## [2.0.0] - March 8th, 2021
 
 * Null Safety
