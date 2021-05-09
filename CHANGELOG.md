@@ -1,3 +1,8 @@
+## [2.0.0+2] - May 9th, 2021
+
+* Dependency updates
+
+
 ## [2.0.0+1] - April 19th, 2021
 
 * Added `CommentStep` to the example
