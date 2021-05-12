@@ -1,4 +1,4 @@
-## [2.0.0+3] - May 11th, 2021
+## [2.0.1] - May 11th, 2021
 
 * Added test for new `drag` step.
 
