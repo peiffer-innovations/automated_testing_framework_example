@@ -22,9 +22,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-dependency_overrides:
-  automated_testing_framework:
-    path: ../automated_testing_framework
+# dependency_overrides:
+#   automated_testing_framework:
+#     path: ../automated_testing_framework
 
 flutter:
   uses-material-design: true
