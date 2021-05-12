@@ -1,3 +1,8 @@
+## [2.0.0+3] - May 11th, 2021
+
+* Added test for new `drag` step.
+
+
 ## [2.0.0+3] - May 9th, 2021
 
 * Dependency updates

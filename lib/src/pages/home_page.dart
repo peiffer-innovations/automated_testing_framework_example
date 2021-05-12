@@ -23,6 +23,7 @@ class HomePage extends StatelessWidget {
     'Icons Gesture': IconsGesturePage(),
     'Issue 5': Issue5Page(),
     'Numbers': NumbersPage(),
+    'Slidables': SlidablesPage(),
     'Stacked Scroll Page': StackedScrollPage(),
   };
 
