@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
   }) : super(key: key);
 
   final Map<String, Widget> _pages = {
+    'Accessibility': AccessibilityPage(),
     'Buttons': ButtonsPage(),
     'Clock': ClockPage(),
     'Dropdown': DropdownPage(),

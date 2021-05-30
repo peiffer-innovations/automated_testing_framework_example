@@ -1,3 +1,8 @@
+## [2.0.2] - May 29th, 2021
+
+* Added an accessibility example.
+
+
 ## [2.0.1] - May 11th, 2021
 
 * Added test for new `drag` step.
