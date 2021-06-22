@@ -1,3 +1,8 @@
+## [2.0.3] - June 22nd, 2021
+
+* Added an example for the new variable steps.
+
+
 ## [2.0.2] - May 29th, 2021
 
 * Added an accessibility example.
