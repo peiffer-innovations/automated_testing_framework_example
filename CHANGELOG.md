@@ -1,3 +1,8 @@
+## [2.1.0] - September 6th, 2021
+
+* Dependency updates
+
+
 ## [2.0.3] - June 22nd, 2021
 
 * Added an example for the new variable steps.
