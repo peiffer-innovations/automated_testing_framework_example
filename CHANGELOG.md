@@ -1,5 +1,6 @@
-## [2.1.0] - September 6th, 2021
+## [2.1.0+1] - September 6th, 2021
 
+* Added the ability for other apps to pass in other pages to route to for testing.
 * Dependency updates
 
 

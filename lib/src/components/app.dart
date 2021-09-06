@@ -141,7 +141,10 @@ class _AppState extends State<App> {
                   scaffoldBackgroundColor: Color(0xffd0d0d0),
                   primarySwatch: Colors.blue,
                 ),
-          home: HomePage(title: widget.options.appTitle),
+          home: HomePage(
+            pages: widget.options.pages,
+            title: widget.options.appTitle,
+          ),
         ),
       ),
     );

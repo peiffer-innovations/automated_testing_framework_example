@@ -12,6 +12,7 @@ class TestExampleOptions {
     this.gestures,
     this.goldenImageWriter = TestStore.goldenImageWriter,
     this.onInitComplete,
+    this.pages = const <String, Widget>{},
     this.suiteName,
     this.testImageReader = TestStore.testImageReader,
     this.testReader = TestStore.testReader,
@@ -27,6 +28,7 @@ class TestExampleOptions {
   final TestableGestures? gestures;
   final GoldenImageWriter goldenImageWriter;
   final Future<void> Function(TestController testController)? onInitComplete;
+  final Map<String, Widget> pages;
   final String? suiteName;
   final TestImageReader testImageReader;
   final TestReader testReader;

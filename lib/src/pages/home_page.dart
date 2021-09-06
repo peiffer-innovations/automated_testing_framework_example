@@ -11,8 +11,11 @@ import 'package:provider/provider.dart';
 class HomePage extends StatelessWidget {
   HomePage({
     Key? key,
+    Map<String, Widget> pages = const <String, Widget>{},
     required this.title,
-  }) : super(key: key);
+  }) : super(key: key) {
+    _pages.addAll(pages);
+  }
 
   final Map<String, Widget> _pages = {
     'Accessibility': AccessibilityPage(),
