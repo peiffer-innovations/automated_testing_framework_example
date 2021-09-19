@@ -122,7 +122,9 @@ class _AppState extends State<App> {
           theme: _darkTheme == true
               ? ThemeData(
                   brightness: Brightness.dark,
-                  buttonColor: Colors.indigo.shade700,
+                  buttonTheme: ButtonThemeData(
+                    buttonColor: Colors.indigo.shade700,
+                  ),
                   canvasColor: Color(0xff404040),
                   iconTheme: IconThemeData(color: Colors.lightBlue.shade200),
                   errorColor: Colors.red.shade300,
