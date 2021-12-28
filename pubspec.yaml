@@ -12,12 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_slidable: ^0.6.0
-  form_validation: ^2.0.0
+  form_validation: ^2.1.0
   intl: ^0.17.0
   logging: ^1.0.2
   meta: ^1.7.0
   provider: ^6.0.0
-  static_translations: ^2.0.2+1
+  static_translations: ^2.1.0
 
 dev_dependencies:
   flutter_test:
