@@ -22,7 +22,7 @@ class _AppState extends State<App> {
   final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
   final List<StreamSubscription> _subscriptions = [];
   bool _darkTheme = true;
-  TestController? _testController;
+  late TestController _testController;
   StreamController<void>? _themeController = StreamController<void>.broadcast();
 
   Key _uniqueKey = UniqueKey();
@@ -34,14 +34,6 @@ class _AppState extends State<App> {
     _testController = TestController(
       goldenImageWriter: widget.options.goldenImageWriter,
       navigatorKey: _navigatorKey,
-      onReset: () async {
-        while (_navigatorKey.currentState?.canPop() == true) {
-          _navigatorKey.currentState?.pop();
-        }
-
-        _uniqueKey = UniqueKey();
-        setState(() {});
-      },
       registry: TestStepRegistry.instance,
       testImageReader: widget.options.testImageReader,
       testReader: widget.options.testReader,
@@ -50,19 +42,30 @@ class _AppState extends State<App> {
       variables: widget.options.variables,
     );
 
-    _themeController?.stream.listen((_) {
-      _darkTheme = _darkTheme != true;
-      if (mounted == true) {
-        setState(() {});
+    _subscriptions.add(_testController.resetStream.listen((_) {
+      while (_navigatorKey.currentState?.canPop() == true) {
+        _navigatorKey.currentState?.pop();
       }
-    });
+
+      _uniqueKey = UniqueKey();
+      setState(() {});
+    }));
+
+    if (_themeController != null) {
+      _subscriptions.add(_themeController!.stream.listen((_) {
+        _darkTheme = _darkTheme != true;
+        if (mounted == true) {
+          setState(() {});
+        }
+      }));
+    }
 
     _initialize();
   }
 
   Future<void> _initialize() async {
-    if (widget.options.onInitComplete != null && _testController != null) {
-      await widget.options.onInitComplete!(_testController!);
+    if (widget.options.onInitComplete != null) {
+      await widget.options.onInitComplete!(_testController);
     }
 
     if (widget.options.autorun == true) {
@@ -74,8 +77,7 @@ class _AppState extends State<App> {
   void dispose() {
     _subscriptions.forEach((sub) => sub.cancel());
     _subscriptions.clear();
-    _testController?.dispose();
-    _testController = null;
+    _testController.dispose();
     _themeController?.close();
     _themeController = null;
 
@@ -83,11 +85,11 @@ class _AppState extends State<App> {
   }
 
   Future<void> _runTests() async {
-    var tests = await _testController?.loadTests(
+    var tests = await _testController.loadTests(
       context,
       suiteName: widget.options.suiteName,
     );
-    await _testController?.runPendingTests(tests!);
+    await _testController.runPendingTests(tests!);
   }
 
   @override

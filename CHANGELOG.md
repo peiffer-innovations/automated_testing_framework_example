@@ -1,3 +1,8 @@
+## [2.2.0] - January 9th, 2022
+
+* Updated to latest framework
+
+
 ## [2.1.0+2] - September 19th, 2021
 
 * Dependency updates
