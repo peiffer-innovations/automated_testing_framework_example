@@ -8,7 +8,7 @@ environment:
   sdk: ">=2.15.0 <3.0.0"
 
 dependencies:
-  automated_testing_framework: ^3.2.2
+  automated_testing_framework: ^3.2.3
   flutter:
     sdk: flutter
   flutter_slidable: ^1.2.0
