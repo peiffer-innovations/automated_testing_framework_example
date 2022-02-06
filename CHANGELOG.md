@@ -1,4 +1,9 @@
-## [2.1.1] - January 17th, 2022
+## [2.2.2] - February 6th, 2022
+
+* Fix for the Accessibility test
+
+
+## [2.2.1] - January 17th, 2022
 
 * Dependency updates
 

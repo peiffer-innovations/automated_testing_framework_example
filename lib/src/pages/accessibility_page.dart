@@ -201,10 +201,12 @@ class _AccessibilityPageState extends State<AccessibilityPage> {
             padding: EdgeInsets.symmetric(horizontal: 8.0),
             child: Testable(
               id: 'text_form_field',
-              child: TextFormField(
-                controller: _textController,
-                decoration: InputDecoration(labelText: 'Text Field'),
-                initialValue: _values['text_form_field'],
+              child: MergeSemantics(
+                child: TextFormField(
+                  controller: _textController,
+                  decoration: InputDecoration(labelText: 'Text Field'),
+                  initialValue: _values['text_form_field'],
+                ),
               ),
             ),
           ),

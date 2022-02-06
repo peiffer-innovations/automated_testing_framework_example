@@ -119,21 +119,30 @@ class SlidablesPage extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) => Testable(
           id: 'slidable_${_items[index]}',
           child: Slidable(
-            actionPane: SlidableScrollActionPane(),
-            actions: [
-              IconSlideAction(
-                caption: 'Action',
-                color: Colors.red,
-                icon: Icons.delete,
-              ),
-            ],
-            secondaryActions: [
-              IconSlideAction(
-                caption: 'Secondary Action',
-                color: Colors.green,
-                icon: Icons.add,
-              )
-            ],
+            startActionPane: ActionPane(
+              motion: const ScrollMotion(),
+              children: [
+                SlidableAction(
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white,
+                  label: 'Action',
+                  icon: Icons.delete,
+                  onPressed: (_) {},
+                ),
+              ],
+            ),
+            endActionPane: ActionPane(
+              motion: const ScrollMotion(),
+              children: [
+                SlidableAction(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                  label: 'Secondary Action',
+                  icon: Icons.add,
+                  onPressed: (_) {},
+                ),
+              ],
+            ),
             child: ListTile(
               title: Text('Slidable $index'),
             ),
