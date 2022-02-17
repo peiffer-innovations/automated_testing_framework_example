@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:automated_testing_framework/automated_testing_framework.dart';
 import 'package:automated_testing_framework_example/automated_testing_framework_example.dart';
 import 'package:automated_testing_framework_example/src/pages/clock_page.dart';
+import 'package:automated_testing_framework_example/src/pages/dialog_page.dart';
 import 'package:automated_testing_framework_example/src/pages/issue5_page.dart';
 import 'package:automated_testing_framework_example/src/pages/numbers_page.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +22,7 @@ class HomePage extends StatelessWidget {
     'Accessibility': AccessibilityPage(),
     'Buttons': ButtonsPage(),
     'Clock': ClockPage(),
+    'Dialog': DialogPage(),
     'Dropdown': DropdownPage(),
     'Edit Text': EditTextPage(),
     'Gestures': GesturesPage(),

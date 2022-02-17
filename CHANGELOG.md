@@ -1,3 +1,8 @@
+## [2.2.3] - February 16th, 2022
+
+* Added a dialog example
+
+
 ## [2.2.2] - February 6th, 2022
 
 * Fix for the Accessibility test
