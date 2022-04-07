@@ -5,7 +5,7 @@ homepage: https://github.com/peiffer-innovations/automated_testing_framework_exa
 version: 2.2.3
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
+  sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
   automated_testing_framework: ^3.3.0
