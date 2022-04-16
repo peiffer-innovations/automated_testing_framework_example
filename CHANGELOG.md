@@ -1,3 +1,8 @@
+## [2.2.3+1] - April 16th, 2022
+
+* Dependency updates
+
+
 ## [2.2.3] - February 16th, 2022
 
 * Added a dialog example
