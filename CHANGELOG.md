@@ -1,3 +1,8 @@
+## [2.2.4+3] - May, 30, 2022
+
+* Automated dependency updates
+
+
 ## [2.2.4+2] - May 14th, 2022
 
 * Flutter 3.0
@@ -165,3 +170,4 @@
 ## [1.0.0] - September 7th, 2020
 
 * Migrated to a separate package.
+
