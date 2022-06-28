@@ -1,3 +1,8 @@
+## [2.2.4+8] - June 28, 2022
+
+* Automated dependency updates
+
+
 ## [2.2.4+7] - June 21, 2022
 
 * Automated dependency updates
@@ -190,6 +195,7 @@
 ## [1.0.0] - September 7th, 2020
 
 * Migrated to a separate package.
+
 
 
 
