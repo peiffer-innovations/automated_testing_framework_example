@@ -1,3 +1,8 @@
+## [2.2.5] - July 24th, 2022
+
+* Dependencies
+
+
 ## [2.2.4+10] - July 12, 2022
 
 * Automated dependency updates
