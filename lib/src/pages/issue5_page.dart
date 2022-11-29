@@ -34,7 +34,7 @@ class _Issue5PageState extends State<Issue5Page> {
               id: 'text_value',
               child: Text(
                 '$_counter',
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
           ],
