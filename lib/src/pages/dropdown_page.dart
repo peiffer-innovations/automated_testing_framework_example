@@ -17,18 +17,18 @@ class _DropdownPageState extends State<DropdownPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dropdown'),
+        title: const Text('Dropdown'),
       ),
       body: Material(
         child: ListView.builder(
           itemCount: 100,
           itemBuilder: (BuildContext context, int index) => Padding(
-            padding: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
             child: Container(
               alignment: Alignment.center,
               width: double.infinity,
               child: Container(
-                constraints: BoxConstraints(maxWidth: 420.0),
+                constraints: const BoxConstraints(maxWidth: 420.0),
                 child: TestableDropdownButtonFormField<String>(
                   autovalidateMode: AutovalidateMode.always,
                   decoration: InputDecoration(
@@ -49,7 +49,7 @@ class _DropdownPageState extends State<DropdownPage> {
                     }
                   },
                   validator: (String? value) {
-                    var validator = Validator(
+                    final validator = Validator(
                       validators: [
                         _CustomValidator(index),
                       ],

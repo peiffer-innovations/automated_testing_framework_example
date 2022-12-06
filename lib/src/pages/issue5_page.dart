@@ -21,13 +21,13 @@ class _Issue5PageState extends State<Issue5Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Issue #5'),
+        title: const Text('Issue #5'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               'You have pushed the button this many times:',
             ),
             Testable(
@@ -45,7 +45,7 @@ class _Issue5PageState extends State<Issue5Page> {
         child: FloatingActionButton(
           onPressed: _incrementCounter,
           tooltip: 'Increment',
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
       ),
     );

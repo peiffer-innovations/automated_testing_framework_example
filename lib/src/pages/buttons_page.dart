@@ -112,12 +112,12 @@ class ButtonsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Buttons'),
+        title: const Text('Buttons'),
       ),
       body: ListView.builder(
         itemCount: _buttons.length,
         itemBuilder: (BuildContext context, int index) => Padding(
-          padding: EdgeInsets.only(top: 16.0),
+          padding: const EdgeInsets.only(top: 16.0),
           child: Container(
             alignment: Alignment.center,
             width: double.infinity,

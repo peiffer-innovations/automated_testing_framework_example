@@ -112,7 +112,7 @@ class SlidablesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Slidables'),
+        title: const Text('Slidables'),
       ),
       body: ListView.builder(
         itemCount: _items.length,

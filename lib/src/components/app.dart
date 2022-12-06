@@ -85,7 +85,7 @@ class _AppState extends State<App> {
   }
 
   Future<void> _runTests() async {
-    var tests = await _testController.loadTests(
+    final tests = await _testController.loadTests(
       context,
       suiteName: widget.options.suiteName,
     );
@@ -104,7 +104,7 @@ class _AppState extends State<App> {
                 showRunnerStatus: !kReleaseMode,
                 statusAlignment: TestStatusAlignment.bottomSafe,
               )
-            : TestRunnerThemeData(
+            : const TestRunnerThemeData(
                 showRunnerStatus: !kReleaseMode,
               ),
       ),
@@ -127,10 +127,10 @@ class _AppState extends State<App> {
                   buttonTheme: ButtonThemeData(
                     buttonColor: Colors.indigo.shade700,
                   ),
-                  canvasColor: Color(0xff404040),
-                  colorScheme: ColorScheme.dark(error: Colors.red),
+                  canvasColor: const Color(0xff404040),
+                  colorScheme: const ColorScheme.dark(error: Colors.red),
                   iconTheme: IconThemeData(color: Colors.lightBlue.shade200),
-                  scaffoldBackgroundColor: Color(0xff303030),
+                  scaffoldBackgroundColor: const Color(0xff303030),
                   primarySwatch: Colors.blue,
                 )
               : ThemeData(
@@ -139,10 +139,10 @@ class _AppState extends State<App> {
                     buttonColor: Colors.indigo.shade700,
                     textTheme: ButtonTextTheme.primary,
                   ),
-                  canvasColor: Color(0xffe0e0e0),
-                  colorScheme: ColorScheme.dark(error: Colors.red),
-                  iconTheme: IconThemeData(color: Colors.blue),
-                  scaffoldBackgroundColor: Color(0xffd0d0d0),
+                  canvasColor: const Color(0xffe0e0e0),
+                  colorScheme: const ColorScheme.dark(error: Colors.red),
+                  iconTheme: const IconThemeData(color: Colors.blue),
+                  scaffoldBackgroundColor: const Color(0xffd0d0d0),
                   primarySwatch: Colors.blue,
                 ),
           home: HomePage(

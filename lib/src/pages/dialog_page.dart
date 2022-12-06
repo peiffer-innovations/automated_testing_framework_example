@@ -11,7 +11,7 @@ class DialogPage extends StatelessWidget {
             id: 'close_dialog_button',
             child: TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: Text('CLOSE'),
+              child: const Text('CLOSE'),
             ),
           ),
         ],
@@ -20,9 +20,9 @@ class DialogPage extends StatelessWidget {
           gestures: TestableGestures(
             widgetDoubleTap: TestableGestureAction.toggle_global_overlay,
           ),
-          decoration: InputDecoration(),
+          decoration: const InputDecoration(),
         ),
-        title: Text('Dialog'),
+        title: const Text('Dialog'),
       ),
     );
   }
@@ -30,13 +30,13 @@ class DialogPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Dialogs')),
+      appBar: AppBar(title: const Text('Dialogs')),
       body: Center(
         child: Testable(
           id: 'show_dialog_button',
           child: ElevatedButton(
             onPressed: () => _showDialog(context),
-            child: Text('Show Dialog'),
+            child: const Text('Show Dialog'),
           ),
         ),
       ),

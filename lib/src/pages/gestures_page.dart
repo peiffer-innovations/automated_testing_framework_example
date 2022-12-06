@@ -16,7 +16,7 @@ class _GesturesPageState extends State<GesturesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Gestures')),
+      appBar: AppBar(title: const Text('Gestures')),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -34,7 +34,7 @@ class _GesturesPageState extends State<GesturesPage> {
                   onDoubleTap: () => setState(() => _value = 'Double Tap'),
                   onLongPress: () => setState(() => _value = 'Long Press'),
                   onTap: () => setState(() => _value = 'Tap'),
-                  child: Padding(
+                  child: const Padding(
                     padding: EdgeInsets.all(20.0),
                     child: Text('Hit Me'),
                   ),
@@ -44,7 +44,7 @@ class _GesturesPageState extends State<GesturesPage> {
             Testable(
               id: 'action_text',
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Text(_value),
               ),
             ),

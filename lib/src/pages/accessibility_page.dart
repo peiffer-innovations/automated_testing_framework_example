@@ -27,55 +27,55 @@ class _AccessibilityPageState extends State<AccessibilityPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Accessibility'),
+        title: const Text('Accessibility'),
       ),
       body: ListView(
         children: [
-          SizedBox(height: 8.0),
+          const SizedBox(height: 8.0),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Wrap(
               alignment: WrapAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'enabled_elevated_button',
                     child: ElevatedButton(
                       onPressed: () {
                         _logger.info('enabled_elevated_button');
                       },
-                      child: Text('Enabled Button'),
+                      child: const Text('Enabled Button'),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'disabled_elevated_button',
-                    child: ElevatedButton(
+                    child: const ElevatedButton(
                       onPressed: null,
                       child: Text('Disabled Button'),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'enabled_text_button',
                     child: TextButton(
                       onPressed: () {
                         _logger.info('enabled_text_button');
                       },
-                      child: Text('Enabled Button'),
+                      child: const Text('Enabled Button'),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'disabled_text_button',
-                    child: ElevatedButton(
+                    child: const ElevatedButton(
                       onPressed: null,
                       child: Text('Disabled Button'),
                     ),
@@ -84,37 +84,37 @@ class _AccessibilityPageState extends State<AccessibilityPage> {
               ],
             ),
           ),
-          Divider(),
+          const Divider(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Wrap(
               alignment: WrapAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'unselectable_test',
-                    child: Text('Unselectable Text'),
+                    child: const Text('Unselectable Text'),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'selectable_text',
-                    child: SelectableText('Selectable Text'),
+                    child: const SelectableText('Selectable Text'),
                   ),
                 ),
               ],
             ),
           ),
-          Divider(),
+          const Divider(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Wrap(
               alignment: WrapAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'enabled_checkbox_1',
                     child: MergeSemantics(
@@ -127,15 +127,15 @@ class _AccessibilityPageState extends State<AccessibilityPage> {
                             ),
                             value: _values['enabled_checkbox_1'] == true,
                           ),
-                          SizedBox(width: 16.0),
-                          Text('Enabled Checkbox 1'),
+                          const SizedBox(width: 16.0),
+                          const Text('Enabled Checkbox 1'),
                         ],
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'enabled_checkbox_2',
                     child: MergeSemantics(
@@ -148,15 +148,15 @@ class _AccessibilityPageState extends State<AccessibilityPage> {
                             ),
                             value: _values['enabled_checkbox_2'] == true,
                           ),
-                          SizedBox(width: 16.0),
-                          Text('Enabled Checkbox 2'),
+                          const SizedBox(width: 16.0),
+                          const Text('Enabled Checkbox 2'),
                         ],
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'disabled_checkbox_1',
                     child: MergeSemantics(
@@ -167,27 +167,27 @@ class _AccessibilityPageState extends State<AccessibilityPage> {
                             onChanged: (value) => null,
                             value: true,
                           ),
-                          SizedBox(width: 16.0),
-                          Text('Disabled Checkbox 1'),
+                          const SizedBox(width: 16.0),
+                          const Text('Disabled Checkbox 1'),
                         ],
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Testable(
                     id: 'disabled_checkbox_2',
                     child: MergeSemantics(
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Checkbox(
+                          const Checkbox(
                             onChanged: null,
                             value: false,
                           ),
-                          SizedBox(width: 16.0),
-                          Text('Disabled Checkbox 2'),
+                          const SizedBox(width: 16.0),
+                          const Text('Disabled Checkbox 2'),
                         ],
                       ),
                     ),
@@ -196,15 +196,15 @@ class _AccessibilityPageState extends State<AccessibilityPage> {
               ],
             ),
           ),
-          Divider(),
+          const Divider(),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Testable(
               id: 'text_form_field',
               child: MergeSemantics(
                 child: TextFormField(
                   controller: _textController,
-                  decoration: InputDecoration(labelText: 'Text Field'),
+                  decoration: const InputDecoration(labelText: 'Text Field'),
                   initialValue: _values['text_form_field'],
                 ),
               ),

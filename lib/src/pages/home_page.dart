@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
           Testable(
             id: 'theme_switcher',
             child: IconButton(
-              icon: Icon(Icons.sync),
+              icon: const Icon(Icons.sync),
               onPressed: () => Provider.of<StreamController<void>>(
                 context,
                 listen: false,

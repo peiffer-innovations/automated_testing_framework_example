@@ -38,14 +38,14 @@ class IconsGesturePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Icon Buttons'),
+        title: const Text('Icon Buttons'),
       ),
       body: ListView.builder(
         itemCount: _icons.length,
         itemBuilder: (BuildContext context, int index) {
           final key = _keys[index];
           return Padding(
-            padding: EdgeInsets.only(top: 16.0),
+            padding: const EdgeInsets.only(top: 16.0),
             child: Container(
               alignment: Alignment.center,
               width: double.infinity,

@@ -9,7 +9,7 @@ class StackedScrollPage extends StatelessWidget {
         child: ListView.builder(
           key: ValueKey<String?>('inner_scroll_$index'),
           itemBuilder: (BuildContext context, int idx) => Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             child: Testable(
               id: 'widget_${index}_$idx',
               child: Material(
@@ -20,7 +20,7 @@ class StackedScrollPage extends StatelessWidget {
                     Container(
                       height: 200.0,
                       width: 200.0,
-                      child: Placeholder(),
+                      child: const Placeholder(),
                     ),
                     Text('$index.$idx'),
                   ],
@@ -37,10 +37,10 @@ class StackedScrollPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stacked Scroll Page'),
+        title: const Text('Stacked Scroll Page'),
       ),
       body: ListView.builder(
-        key: ValueKey('outer_scroll'),
+        key: const ValueKey('outer_scroll'),
         itemBuilder: (BuildContext context, int index) =>
             _buildHorizontalScroll(index),
         itemCount: 100,

@@ -20,7 +20,7 @@ class _ClockPageState extends State<ClockPage> {
   void initState() {
     super.initState();
 
-    _timer = Timer.periodic(Duration(milliseconds: 100), (timer) {
+    _timer = Timer.periodic(const Duration(milliseconds: 100), (timer) {
       if (mounted == true) {
         setState(() {});
       }
@@ -37,13 +37,13 @@ class _ClockPageState extends State<ClockPage> {
 
   @override
   Widget build(BuildContext context) {
-    var dateFormat = DateFormat('yyyy-MM-dd');
-    var timeFormat = DateFormat('HH:mm:ss.SSS');
-    var now = DateTime.now();
+    final dateFormat = DateFormat('yyyy-MM-dd');
+    final timeFormat = DateFormat('HH:mm:ss.SSS');
+    final now = DateTime.now();
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Clock'),
+        title: const Text('Clock'),
       ),
       body: SafeArea(
         child: Center(
@@ -54,12 +54,12 @@ class _ClockPageState extends State<ClockPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 100.0,
                   width: 200.0,
                   child: Placeholder(),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16.0,
                 ),
                 Testable(

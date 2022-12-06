@@ -12,7 +12,7 @@ class CenterTextPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Center Text')),
+      appBar: AppBar(title: const Text('Center Text')),
       body: Center(
         child: Material(
           borderRadius: BorderRadius.circular(8.0),
@@ -20,7 +20,7 @@ class CenterTextPage extends StatelessWidget {
           child: Testable(
             id: 'center_text',
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Text(text),
             ),
           ),
