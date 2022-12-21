@@ -1,3 +1,8 @@
+## [2.3.1] - December 20th, 2022
+
+* Dependencies
+
+
 ## [2.3.0] - November 28th, 2022
 
 * Preparing for Flutter 3.6
