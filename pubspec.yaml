@@ -1,34 +1,35 @@
 name: 'automated_testing_framework_example'
 description: 'Example project for the Automated Testing Framework that provides a reusable example across add ons.'
 homepage: 'https://github.com/peiffer-innovations/automated_testing_framework_example'
-version: '2.3.0-prerelease.1'
+version: '2.3.0+1'
 
-environment:
+environment: 
   sdk: '>=2.18.0 <3.0.0'
 
-dependencies:
-  automated_testing_framework: '^4.0.1+8'
-  flutter:
+dependencies: 
+  automated_testing_framework: '^4.0.7+9'
+  flutter: 
     sdk: 'flutter'
   flutter_slidable: '>=1.3.1 <3.0.0'
-  form_validation: '^2.1.0+9'
-  intl: '^0.17.0'
-  logging: '^1.0.2'
+  form_validation: '^2.2.0+1'
+  intl: '^0.18.0'
+  logging: '^1.1.0'
   meta: '^1.7.0'
-  provider: '^6.0.3'
-  static_translations: '^2.1.1+6'
+  provider: '^6.0.5'
+  static_translations: '^2.1.1+19'
 
-dev_dependencies:
-  flutter_test:
+dev_dependencies: 
+  flutter_test: 
     sdk: 'flutter'
 
-flutter:
+
+flutter: 
   uses-material-design: true
-  assets:
+  assets: 
     - 'assets/all_tests.json'
     - 'assets/tests/'
 
-ignore_updates:
+ignore_updates: 
   - 'archive'
   - 'async'
   - 'boolean_selector'
