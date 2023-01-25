@@ -1,3 +1,8 @@
+## [2.3.2] - January 24th, 2023
+
+* Flutter 3.7
+
+
 ## [2.3.1] - December 20th, 2022
 
 * Dependencies
